@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheesecake</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #fff3e5;
+      font-family: Georgia, serif;
+      color: #222;
+    }
+
+    a {
+      color: chocolate;
+      text-decoration: none;
+    }
+
+    .page-container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      text-align: center;
+      color: chocolate;
+      margin: 0 0 10px 0;
+    }
+
+    nav{
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    nav a {
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(210,105,30,0.3);
+      border-radius: 8px;
+    }
+
+    .layout {
+      display: block;
+      gap: 20px;
+    }
+
+    @media (min-width: 992px) {
+      .layout {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+      }
+
+      aside {
+        position: sticky;
+        top: 20px;
+        height: fit-content;
+      }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    @media (min-width: 576px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: chocolate;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .ad {
+      border: 2px dashed rgba(210,105,30,0.25);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .ad img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      padding: 16px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+
+    <header>
+      <h1>Cheesecake</h1>
+    </header>
+
+    <nav>
+      <a href="#history">History</a>
+      <a href="#types">Types</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#popular">Popular</a>
+    </nav>
+
+    <div class="layout">
+
+      <main class="card">
+        <p>
+          Cheesecake is a sweet dessert consisting of one or more layers. The main layer is made of a mixture of soft, fresh cheese, eggs and sugar. If there is a bottom layer, it often consists of a crust or base made from crushed cookies, graham crackers, pastry or sponge cake. Cheesecakes can be baked or unbaked (usually refrigerated).
+        </p>
+
+        <p style="border: 3px solid chocolate; padding: 10px; border-radius: 10px; display:inline-block;">
+          Click here to visit the website with cheesecake recipes:
+          <a href="https://www.cookingclassy.com/?s=cheesecake" target="_blank">Cooking Classy</a>
+        </p>
+
+        <h2 id="history" style="color: chocolate;">The History of cheesecake</h2>
+        <p>Cheesecake is believed to have originated in ancient Greece. The earliest recorded mention of a cheesecake was by the Greek physician Aegimus, who wrote a book on the art of making cheesecakes. Cheesecake was served to athletes during the first Olympic games held in 776 BC on the island of Delos.</p>
+        <p>When the Romans conquered Greece, they adopted the cheesecake recipe and spread it throughout their empire. The Romans added eggs and crushed cheese to the recipe, which made the cheesecake richer and creamier. They also introduced the use of honey as a sweetener.</p>
+        <p>During the Middle Ages, cheesecake recipes were influenced by the addition of various ingredients such as dried fruits, nuts and spices. In the 18th century, cream cheese was invented in the United States, which became a popular ingredient in cheesecake recipes.</p>
+        <p>Today, cheesecake is enjoyed worldwide and comes in many variations, including the following styles.</p>
+
+        <h2 id="types" style="color: chocolate;">Types of Cheesecake</h2>
+        <ul>
+          <li>New York-style cheesecake</li>
+          <li>Italian-style cheesecake</li>
+          <li>Japanese-style cheesecake</li>
+          <li>No-bake cheesecake</li>
+        </ul>
+
+        
+        <p>New York-style cheesecake is known for its rich, dense, and creamy consistency, while Italian-style cheesecake is lighter and made with ricotta cheese. Japanese-style cheesecake is fluffy and soufflé-like and no-bake cheesecake is set in the refrigerator without baking.</p>
+        <h2 id="gallery" style="color: chocolate;">Gallery</h2> 
+        <p>Here are the photos of popular flavored cheesecakes:</p>
+        <div class="gallery">
+          <img src="images/chc1.jpg" alt="Classic cheesecake">
+          <img src="images/chc2.jpg" alt="Strawberry cheesecake">
+          <img src="images/chc3.jpg" alt="Chocolate cheesecake">
+          <img src="images/chc4.jpg" alt="Blueberry cheesecake">
+          <img src="images/chc5.jpg" alt="Lemon cheesecake">
+        </div>
+
+        <a class="cta-btn" href="https://www.thecheesecakefactory.com/menu/cheesecakes-specialty-desserts" target="_blank">Explore Flavors</a>
+
+        <h2 id="popular" style="color: chocolate;">Popular Flavors</h2>
+        <ol>
+          <li>Classic</li>
+          <li>Strawberry</li>
+          <li>Chocolate</li>
+          <li>Blueberry</li>
+          <li>Lemon</li>
+        </ol>
+        <p>Cheesecake can be made in a variety of flavors, with fruit, chocolate and other flavorings added to the cheese mixture. The possibilities are endless!</p>
+      </main>
+
+      <aside class="card">
+        <h3 style="color: chocolate;">Yummy!</h3>
+        <div class="ad">
+          <img src="images/chc6.jpg" alt="Cheesecake ad">
+          <p><strong>Order Cheesecake!</strong></p>
+          <p>Local bakery specials & recipes.</p>
+          <a class="cta-btn" href="https://crumblecakecafe.com" target="_blank">View Riga Recipes</a>
+        </div>
+      </aside>
+
+    </div>
+
+    <footer>
+      <a href="#">Back to the top</a>
+    </footer>
+
+  </div>
+</body>
+</html>
